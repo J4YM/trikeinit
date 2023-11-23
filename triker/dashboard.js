@@ -49,8 +49,24 @@
 function trikerprofile() {
   Swal.fire({
     position: "top-end",
-    html: `<img id="userIcon" height="100px" width="100px "src="/assets/man (1).png" alt="User Avatar"><br> Name: <br> Address: <br> Contact No.: `,
+    html: `<img id="userIcon" height="100px" width="100px "src="/assets/man (1).png" alt="User Avatar"><br> Name: Juan Dela Cruz <br> Address: Poblacion, Baliwag <br> Contact No.: 0969-420-6969`,
     title: "Profile Info",
     showConfirmButton: false
   });
+}
+
+function logout() {
+  Swal.fire({
+    title: 'Are you sure you want to Log Out?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Yes',
+    denyButtonText: 'No',
+  }).then((result) => {
+    if (result.isConfirmed) {
+
+      Swal.fire('Log Out Successful!', '', 'success');
+      window.location.href = "../index.html";
+    } 
+  })
 }

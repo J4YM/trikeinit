@@ -890,7 +890,7 @@ function lookride(){
 }
 
 function multiply(x) {
-  const baseP = 15;
+  const baseP = 10;
   const result = x * baseP;
   return result + " Pesos";
 }

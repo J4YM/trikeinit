@@ -6,6 +6,10 @@ This is a Concept Webpage for a Digitized System for Local Transportation (Tricy
 ## Authors
 
 - [@JayM](https://www.github.com/J4YM)
+- [@Eros](https://www.github.com/J4YM)
+- [@Ychan](https://www.github.com/J4YM)
+- [@Paul](https://www.github.com/J4YM)
+- [@Clark](https://www.github.com/J4YM)
 
 
 ## PROJECT DESCRIPTION

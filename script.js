@@ -176,6 +176,7 @@ function trikesign() {
 function payment() {
   window.location.href = "user/checkout.html";
 }
+
 function loginUser() {
   document.getElementById('userIcon').classList.add('logged-in');
   setTimeout(loginUser, 2000);

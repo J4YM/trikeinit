@@ -365,7 +365,7 @@ function picklocation() {
     hinukay.text = "Hinukay - " + multiply(8.1);
     makinabang.text = "Makinabang - " + multiply(1.9);
     matangtubig.text = "Matangtubig - " + multiply(5.4);
-    pagala.text = "Pagala - " + multiply();
+    pagala.text = "Pagala - " + multiply(2.4);
     paitan.text = "Paitan - " + multiply(8.5);
     piel.text = "Piel - " + multiply(3.6);
     pinagbarilan.text = "Pinagbarilan - " + multiply(0.5);
@@ -422,7 +422,7 @@ function picklocation() {
     concepcion.text = "Concepcion - " + multiply(5.1);
     hinukay.text = "Hinukay - " + multiply(7.6);
     makinabang.text = "Makinabang - " + multiply(9.1);
-    matangtubig.text = "Matangtubig - " + multiply();
+    matangtubig.text = "Matangtubig - " + multiply(7.5);
     pagala.text = "Pagala - " + multiply(4.2);
     paitan.text = "Paitan - " + multiply(5.6);
     piel.text = "Piel - " + multiply(3.6);
@@ -890,7 +890,7 @@ function lookride(){
 }
 
 function multiply(x) {
-  const baseP = 10;
+  const baseP = 15;
   const result = x * baseP;
   return result + " Pesos";
 }

@@ -19,6 +19,11 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <title>home</title>
+
+  <!--GOOGLE MAP API, DO NOT REMOVE-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" type="text/css" href="GMaps.css" />
+  <script type="module" src="GMaps.js"></script>
 </head>
 
 <body>
@@ -50,9 +55,18 @@
       <div class="product-device shadow-sm d-none d-md-block"></div>
       <h1 class="display-3 fw-bold">TRICYCALL</h1>
       <h3 class="fw-normal text-muted mb-3">SAKAY NA!</h3>
-      <div class="card">
+      <!--<div class="card">
         <img src="assets/map.png" alt="">
+      </div>-->
+
+      <!--GMAPS API INTEGRATION, Galawin nyo kung gusto nyo kayo bahala hahhah-->
+      <div class="GMaps">
+        <div id="map"></div>
+      <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+          ({key: "AIzaSyBISUXIi9-draHRgwTaNS6A0YeIE24Nfm8", v: "weekly"});</script>
       </div>
+      <!--GMAPS API INTEGRATION END LINE-->
+
       <a href="user/tawag.html" class="custom-button" href="user/tawag.html">Book Now!</a>
 
       <div class="product-device shadow-sm d-none d-md-block"></div>

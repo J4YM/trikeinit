@@ -55,8 +55,6 @@ html {
       transition: background-color 0.3s ease;
   }
 
-      background-color: #2980b9;
-
 /* Hover effect */
 .custom-button:hover {
    background-color: #2980b9;

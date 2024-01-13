@@ -1,0 +1,14 @@
+.GMaps {
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1%;
+}
+
+#map {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border: 10px solid greenyellow
+}

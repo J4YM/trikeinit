@@ -1,78 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/trikelogo.jpg" type="image/gif" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="homestyle.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/trikelogo.jpg" type="image/gif" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="sweetalert2.min.css">
-  <link href="homestyle.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <title>home</title>
+    <!--GOOGLE MAP API, DO NOT REMOVE-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="GMaps.css" />
+    <script type="module" src="GMaps.js"></script>
 
-  <!--GOOGLE MAP API, DO NOT REMOVE-->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <link rel="stylesheet" type="text/css" href="GMaps.css" />
-  <script type="module" src="GMaps.js"></script>
-</head>
 
-<body>
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
-      <div class="p-2 flex-fill">
-        <div id="userIconContainer">
-          <button onclick="profile()"><img id="userIcon" src="/assets/defaultimage.jpg" alt="User Avatar"></button>
+    <!--CONDITIONAL RENDERING, DO NOT REMOVE-->
+    <script src="ConditionalRender.js"></script>
+    <link rel="stylesheet" type="text/css" href="ConditionalRender.css" />
+    
+    <script src="triker/AcceptBooking.js"></script>
+  </head>
+
+  <body>
+    <header> 
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
+        <div class="p-2 flex-fill">
+          <div id="userIconContainer">
+            <button onclick="profile()"><img id="userIcon" src="/assets/defaultimage.jpg" alt="User Avatar"></button>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2">Home</a></li>
+            <li><a href="user/About.html" class="nav-link px-2">About</a></li>
+            <li><a href="#" class="nav-link px-2">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-end p-2 flex-fill">
+          <a id="logout1" class="btn btn-outline-primary" onclick="logout()">Log Out </a>
         </div>
       </div>
-      <div class="p-2 flex-fill">
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2">Home</a></li>
-          <li><a href="user/About.html" class="nav-link px-2">About</a></li>
-          <li><a href="#" class="nav-link px-2">Contact</a></li>
-        </ul>
+      <div id="_8L9cZdKVH7-TseMP6bC3wAs_7">
+        <span class="gb" style="display:none">
+        </span>
       </div>
-      <div class="col-md-3 text-end p-2 flex-fill">
-        <a id="logout1" class="btn btn-outline-primary" onclick="logout()">Log Out </a>
-      </div>
+    </header>
+
+    <div class="CustomerContainer">
+        <h1>TRICYCALL</h1>
+        <h3>SAKAY NA!</h3>
+
+        <!--GMAPS API INTEGRATION, DONT CHANGE/REMOVE ANYTHING ESP SCRIPT-->
+        <div class="GMaps">
+          <div id="map"></div>
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyBISUXIi9-draHRgwTaNS6A0YeIE24Nfm8", v: "weekly"});</script>
+        </div>
+        <!--GMAPS API INTEGRATION END LINE-->
+
+        <button class="btn btn-primary" onclick="showBookElement()" style="margin-bottom: 20px;">Book Now!</button>
+
+        <!-- CONDITIONALY RENDERED ELEMENT -->
+        <div id="BookElement">
+          <p>----BOOK PAGE----</p>
+          <select class="form-select" aria-label="Default select example" id="location">
+            <option selected value="0">Select Location</option>
+            <option value="1">Bagong Nayon</option>
+            <option value="2">Barangca</option>
+            <option value="3">Calantipay</option>
+            <option value="4">Catulinan</option>
+            <option value="5">Concepcion</option>
+            <option value="6">Hinukay</option>
+            <option value="7">Makinabang</option>
+            <option value="8">Matangtubig</option>
+            <option value="9">Pagala</option>
+            <option value="10">Paitan</option>
+            <option value="11">Piel</option>
+            <option value="12">Pinagbarilan</option>
+            <option value="13">Poblacion</option>
+            <option value="14">Sabang</option>
+            <option value="15">San Jose</option>
+            <option value="16">San Roque</option>
+            <option value="17">Santa Barbara</option>
+            <option value="18">Santo Cristo</option>
+            <option value="19">Santo Niño</option>
+            <option value="20">Subic</option>
+            <option value="21">Sulivan</option>
+            <option value="22">Tangos</option>
+            <option value="23">Tarcan</option>
+            <option value="24">Tiaong</option>
+            <option value="25">Tibag</option>
+            <option value="26">Tilapayong</option>
+            <option value="27">Virgen Delas Flores</option>
+          </select>
+          <br>
+          <select class="form-select" aria-label="Default select example" id="destination">
+            <option selected value="0">Select Destination</option>
+            <option value="1" id="bagongnayon">Bagong Nayon</option>
+            <option value="2" id="barangca">Barangca</option>
+            <option value="3" id="calantipay">Calantipay</option>
+            <option value="4" id="catulinan">Catulinan</option>
+            <option value="5" id="concepcion">Concepcion</option>
+            <option value="6" id="hinukay">Hinukay</option>
+            <option value="7" id="makinabang">Makinabang</option>
+            <option value="8" id="matangtubig">Matangtubig</option>
+            <option value="9" id="pagala">Pagala</option>
+            <option value="10" id="paitan">Paitan</option>
+            <option value="11" id="piel">Piel</option>
+            <option value="12" id="pinagbarilan">Pinagbarilan</option>
+            <option value="13" id="poblacion">Poblacion</option>
+            <option value="14" id="sabang">Sabang</option>
+            <option value="15" id="sanjose">San Jose</option>
+            <option value="16" id="sanroque">San Roque</option>
+            <option value="17" id="santabarbara">Santa Barbara</option>
+            <option value="18" id="santocristo">Santo Cristo</option>
+            <option value="19" id="santonino">Santo Niño</option>
+            <option value="20" id="subic">Subic</option>
+            <option value="21" id="sulivan">Sulivan</option>
+            <option value="22" id="tangos">Tangos</option>
+            <option value="23" id="tarcan">Tarcan</option>
+            <option value="24" id="tiaong">Tiaong</option>
+            <option value="25" id="tibag">Tibag</option>
+            <option value="26" id="tilapayong">Tilapayong</option>
+            <option value="27" id="vdf">Virgen Delas Flores</option>
+          </select>
+          <script src="../ride.js"></script>
+          <script src="../script.js"></script>
+          <button type="button" class="btn btn-primary" onclick="picklocation()">Check Price</button>
+          <button type="button" class="btn btn-primary" onclick="lookride()" style="display:none;" id="booknow">Book Now</button>
+        </div>
+        <!-- CONDITIONALY RENDERED ELEMENT END LINE -->
     </div>
-    <div id="_8L9cZdKVH7-TseMP6bC3wAs_7">
-      <span class="gb" style="display:none">
-      </span>
-    </div>
-  </header>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <h1 class="display-3 fw-bold">TRICYCALL</h1>
-      <h3 class="fw-normal text-muted mb-3">SAKAY NA!</h3>
-      <!--<div class="card">
-        <img src="assets/map.png" alt="">
-      </div>-->
-
-      <!--GMAPS API INTEGRATION, Galawin nyo kung gusto nyo kayo bahala hahhah-->
-      <div class="GMaps">
-        <div id="map"></div>
-      <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-          ({key: "AIzaSyBISUXIi9-draHRgwTaNS6A0YeIE24Nfm8", v: "weekly"});</script>
-      </div>
-      <!--GMAPS API INTEGRATION END LINE-->
-
-      <a href="user/tawag.html" class="custom-button" href="user/tawag.html">Book Now!</a>
-
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,17 @@
+#BookElement 
+{
+    display: none;
+    border: 50px solid;
+    margin: auto;
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+#BookElement button
+{
+    margin-top: 10px;
+}

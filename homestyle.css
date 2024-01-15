@@ -1,10 +1,20 @@
-html {
-  height: 100%;
+html, body {
+  min-height: 100%;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.CustomerContainer 
+{
+  text-align: center;
+}
+
+.CustomerContainer h1, h3
+{
+  text-align: center;
 }
 
 .container {
@@ -41,19 +51,21 @@ html {
   background-color: #1640D6;
   border-color: #1640D6;
 }
-.custom-button {
+
+.custom-button 
+{
   display: inline-block;
-      padding: 10px 20px;
-      border-radius: 50px; 
-      background-color: #3498db; 
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
+  padding: 10px 20px;
+  border-radius: 50px; 
+  background-color: #3498db; 
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
 /* Hover effect */
 .custom-button:hover {

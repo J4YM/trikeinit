@@ -72,7 +72,7 @@ function toggleLogin() {
           icon: 'success',
           title: 'Logged in successfully'
         })
-        window.location.href = "Home.html";
+        window.location.href = "../Home.html";
       } else if (username == "trike1" && password == "toda1triker1"){
         const Toast = Swal.mixin({
           toast: true,

@@ -6,9 +6,9 @@ This is a Concept Webpage for a Digitized System for Local Transportation (Tricy
 ## Authors
 
 - [@JayM](https://www.github.com/J4YM)
-- [@Eros](https://www.github.com/J4YM)
+- [@Eros](https://www.github.com/e-roz)
 - [@Ychan](https://www.github.com/J4YM)
-- [@Paul](https://www.github.com/J4YM)
+- [@Paul](https://www.github.com/Prevail-365)
 - [@Clark](https://www.github.com/J4YM)
 
 
